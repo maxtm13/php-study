@@ -169,8 +169,130 @@
 // }
 
 
-$string = 'Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Свою маленький над жизни живет.';
-$arrStr = mb_str_split($string);
-for ($i = count($arrStr) ; $i >= 0; $i--) {
-	echo $arrStr[ $i ];
+// $string = 'Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Свою маленький над жизни живет.';
+// $arrStr = mb_str_split($string);
+// for ($i = count($arrStr) ; $i >= 0; $i--) {
+// 	echo $arrStr[ $i ];
+// }
+// $i=0;
+// while ($i < 4) {
+// 	$arr_number[] = random_int( 1, 10 );
+// 	$i++;
+// }
+// print_r($arr_number);
+// $sum = 0;
+// foreach ($arr_number as $number) {
+// 	$sum += $number ** 2;
+// }
+// print_r("Сумма квадратов " . $sum);
+
+
+// $i = 0;
+// while ($i < 4) {
+// 	$arr_number[] = random_int(16, 81);
+// 	$i++;
+// }
+// print_r($arr_number);
+// $sum = 0;
+// foreach ($arr_number as $number) {
+// 	$sum += sqrt($number);
+// }
+// print_r("Сумма квадратных корней " . $sum);
+
+
+// $i = 0;
+// while ($i < 25) {
+//     $arr_number[] = random_int(-86, 20);
+//     $i++;
+// }
+// print_r($arr_number);
+// $sum = 0;
+// foreach ($arr_number as $number) {
+//     if ($number > 0){
+//         $sum += $number;
+//     }
+// }
+// print_r("Сумма положительных элементов " . $sum);
+
+/*
+Дан массив с числами. Найдите сумму тех элементов этого массива, которые больше нуля и меньше десяти.
+*/
+
+// $i = 0;
+// while ($i < 25) {
+//     $arr_number[] = random_int(-56, 50);
+//     $i++;
+// }
+// print_r($arr_number);
+// $sum = 0;
+// foreach ($arr_number as $number) {
+//     if ($number > 0 && $number < 9){
+// 			print("$number, " );
+//       $sum += $number;
+//     }
+// }
+// print_r("Сумма положительных элементов меньших 9 " . $sum);
+
+
+//Получите массив букв этой строки.
+
+// $string = 'abcde';
+// $arrStr = str_split($string);
+// var_dump($arrStr);
+
+// $num = 12345;
+// $num *=10;
+// $arrNum = str_split($num);
+// print_r($arrNum);
+
+// $num = 12345;
+// $mun = strrev($num);
+// print_r($mun);
+
+// $num = 12345;
+// $arrNum = str_split($num);
+// $i = 0;
+// $sum = 0;
+// do {
+// 	$sum += $arrNum[$i];
+// 	$i++;
+// } while ($i < count($arrNum));
+// print_r($sum);
+
+// $arr = [1.456, 2.125, 3.32, 4.1, 5.34];
+// foreach ($arr as $value) {
+// 	$arr2[] = round($value,1);
+// }
+// print_r($arr2);
+// $arr = ['http://jlkd', 'duitd', 'https://ya.ru', '5545', 4, 'Http://com.org', 'http://google.com'];
+// for ($i = count($arr) - 1; $i != 0;  $i--) {
+// 	if (!mb_eregi("^(http:\/\/)", $arr[$i])) {
+// 		// print("$i" . PHP_EOL);
+// 		array_splice($arr, $i, 1);
+// 	}
+// }
+// print_r($arr);
+
+
+// $arr = ['http://jlkd.html', 'duitd', 'https://ya.ru', '5545.html', 4, 'Http://com.org.html', 'http://google.com'];
+// for ($i = count($arr) - 1; $i != 0; $i--) {
+// 	if (!mb_eregi("\.html$", $arr[$i])) {
+// 		print("$i" . PHP_EOL);
+// 		array_splice($arr, $i, 1);
+// 	}
+// }
+// print_r($arr);
+
+//Дан массив с числами. Увеличьте каждое число из массива на 10 процентов.
+
+$i = 0;
+while ($i < 5) {
+    $arr_number[] = random_int(-56, 50);
+    $i++;
 }
+print_r($arr_number);
+foreach ($arr_number as $key => $value) {
+	$arr_number[ $key ] = $value*1.1;
+}
+
+print_r($arr_number);
