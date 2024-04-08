@@ -75,6 +75,7 @@
 // }
 
 
+
 // $num1 = random_int(1, 100 );
 // $num2 = random_int(1, 100);
 // while ($num1 % $num2 !== 0) {
@@ -285,14 +286,159 @@
 
 //Дан массив с числами. Увеличьте каждое число из массива на 10 процентов.
 
-$i = 0;
-while ($i < 5) {
-    $arr_number[] = random_int(-56, 50);
-    $i++;
+// $i = 0;
+// while ($i < 5) {
+//     $arr_number[] = random_int(-56, 50);
+//     $i++;
+// }
+// print_r($arr_number);
+// foreach ($arr_number as $key => $value) {
+// 	$arr_number[ $key ] = $value*1.1;
+// }
+
+// print_r($arr_number);
+// $smallArr = array_fill(0, 20, random_int(0,100)); 
+// print_r($smallArr);
+
+// $newArr = [];
+// $arr = [1, 2, 3, 4, 5, 6];
+// for ($i=0; $i < count($arr) ; $i++) {
+// 	// array_push($newArr, array_slice($arr, $i*2, 2 )) ;
+// 	echo "[$arr[$i],  " . $arr[++$i] .   "]"  . PHP_EOL;
+
+
+// };
+
+// print_r($newArr[0]);
+
+
+// for ($i= 0; $i < count($newArr); $i++) {
+// print_r($newArr[$i] . PHP_EOL);
+// }
+
+
+// $arr1 = [1, 2, 3];
+// $arr2 = [4, 5, 6];
+
+// print_r(array_merge($arr1, $arr2)); 
+
+// $string = 'Далеко-далеко за словесными горами в стр0ане гласных и согласных живут рыбные тексты. Курсивных переулка осталось не дорогу!';
+// print_r(strpos($string,'0'));
+// echo 
+
+
+// for ($i = 10;	$i < 1000;	$i++) {
+// 	if ((substr($i, 0, 1) +	substr($i, 1, 1)) === 5) {
+// 		print($i . PHP_EOL);
+// 	}
+// }
+
+//Дан массив. Удалите из него элементы с заданным значением.
+
+// $arr = [45,64,'gd','56','sdrwr', 45, "45"];
+// print_r($arr);
+// $deletedElem = readline("Введите удаляемый элемент ");
+// $delededIndex = array_search($deletedElem, $arr);
+// if ($delededIndex === false) {
+// 	print_r("Нет такого элемента");
+// } else {
+// 		while ($delededIndex !== false) {
+// 		array_splice($arr, array_search($deletedElem, $arr), 1);
+// 		$delededIndex = array_search($deletedElem, $arr);
+// 	}
+// 	print_r($arr);
+// }  
+
+
+// 	Дан некоторый массив, например, вот такой:
+
+// [1, 2, 3, 4, 5, 6]
+// Найдите сумму первой половины элементов этого массива.
+
+// $arr = [1, 2, 3, 4, 5, 6];
+// $i=0;
+// $sum = 0;
+// while ($i <= (count( $arr )/2)-1) {
+// 	$sum += $arr[$i];
+// 	$i++;
+// }
+// print($sum);
+// $test = 0;
+
+// if (isset($test)) {
+// 	echo '+++';
+// } else {
+// 	echo '---';
+// }
+
+// Пусть дана переменная $num, которая может быть либо отрицательной, либо положительной. Запишите в переменную $res число 1, если переменная $num больше или равна нулю, и число -1, если переменная $num меньше нуля.
+
+// $num = -11;
+// $res = $num > 0 ? 1 : 0;
+// print_r($res);
+
+// $user = ['nameF' => 'john', 'age' => 30];
+
+// $name = $user['name'] ?? 'unknown';
+
+
+// // if (isset($user['name'])) {
+// // 	$name = $user['name'];
+// // } else {
+// // 	$name = 'unknown';
+// // }
+
+// echo $name;
+
+/*
+if (isset($user['name'])) {
+	$res = $user['name'];
+} elseif (isset($user['surname'])) {
+	$res = $user['surname'];
+} else {
+	$res = '';
 }
-print_r($arr_number);
-foreach ($arr_number as $key => $value) {
-	$arr_number[ $key ] = $value*1.1;
+*/
+
+// $user = ['namef' => 'john', 'age' => 30];
+// $res = $user['name'] ?? $user['surname'] ?? 'eee';
+
+// print_r($res);
+
+// $a = 2 ** 4;
+// $b = 4 ** 2;
+// $res = $a == $b;
+// echo $res;
+
+// Дано число, например, 12345. Проверьте, что первым символом этого числа является цифра 1, 2 или 3.
+
+// $num = 52345;
+// $num .='';
+// if ($num[0]==1 ||  $num[0] == 2 || $num[0] == 3) {
+// 	echo '!!';
+// }
+
+// $arr = [1, 2, 3, 4, 5];
+
+// foreach ($arr as $elem) {
+// 	echo $elem . ' ';
+// }
+
+// $arr = ['user1' => 30, 'user2' => 32, 'user3' => 33];
+
+// foreach ($arr as $key => $value) {
+// 	print_r("$key - возраст $value лет" . PHP_EOL);
+// }
+
+$arr = [10, 20, 30, 50, 235, 3000];
+
+// Выведите на экран только те числа из массива, которые начинаются на цифру 1, 2 или 5.
+
+foreach ($arr as $key => $value) {
+	$firstNum = (string) $value; 
+	if ($firstNum[0] === '1' || $firstNum[0] === '2' || $firstNum[0] === '5') {
+		// print($firstNum[0] . " - ");
+		print($value . PHP_EOL);
+	}
 }
 
-print_r($arr_number);
